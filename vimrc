@@ -5,13 +5,13 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'matchit.zip'
-Bundle 'The-NERD-Commenter'
-Bundle 'The-NERD-tree'
-Bundle 'vim-powerline'
-Bundle 'Command-T'
-Bundle 'molokai'
+Bundle 'tomasr/molokai'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-scripts/matchit.zip'
+Bundle 'vim-scripts/The-NERD-Commenter'
+Bundle 'vim-scripts/The-NERD-tree'
+Bundle 'vim-scripts/Command-T'
 
 """""""""""""""""""" GLOBAL
 let mapleader=","
