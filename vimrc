@@ -127,3 +127,8 @@ function! ToggleFocusMode()
   endif
 endfunc
 nnoremap <F1> :call ToggleFocusMode()<cr>
+
+""" Jedi disable auto completion popup
+let g:jedi#popup_on_dot = 0
+let g:jedi#show_function_definition = "0"
+
