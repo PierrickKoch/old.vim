@@ -46,7 +46,7 @@ set ttyfast
 set mouse=
 set nocompatible
 set backup
-set backupdir=~/.vim_backup
+set backupdir=~/.vim/backup
 set noswapfile
 set fileformats=unix,dos,mac
 set laststatus=2

@@ -13,8 +13,13 @@ mkdir -p ~/.vim/spell # install dict
     http://ftp.vim.org/vim/runtime/spell/en.utf-8.spl \
     http://ftp.vim.org/vim/runtime/spell/en.utf-8.sug
 
-mkdir -p ~/.vim_backup
-cp -r ~/.vim/.fonts ~ # powerline patched DejaVuSansMono
+mkdir -p ~/.vim/backup
+
+echo "Patch font for Powerline. You might need to install 'python-fontforge'."
+mkdir -p ~/.fonts
+cd ~/.fonts
+# powerline patch DejaVuSansMono
+~/.vim/bundle/vim-powerline/fontpatcher/fontpatcher /usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono.ttf
 
 vim +BundleInstall +qall
 
