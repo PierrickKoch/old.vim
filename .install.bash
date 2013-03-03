@@ -18,3 +18,8 @@ cp -r ~/.vim/.fonts ~ # powerline patched DejaVuSansMono
 
 vim +BundleInstall +qall
 
+echo "Install Command T"
+cd ~/.vim/bundle/Command-T/ruby/command-t/
+ruby extconf.rb
+make
+echo "Done. You might need to install 'vim-nox' for Ruby support"
