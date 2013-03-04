@@ -3,7 +3,7 @@
 # we suppose you already cloned ~/.vim
 [[ ! -e ~/.vim/bundle/vundle ]] && git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-[[ -f ~/.vimrc ]] && mv ~/.vimrc ~/.vimrc.bak
+[[ -f ~/.vimrc ]] && mv ~/.vimrc ~/.vimrc.$(date +%s).bak
 echo "source ~/.vim/vimrc" > ~/.vimrc
 
 mkdir -p ~/.vim/spell # install dict
