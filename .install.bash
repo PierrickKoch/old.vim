@@ -15,16 +15,17 @@ mkdir -p ~/.vim/spell # install dict
 
 mkdir -p ~/.vim/backup
 
+# install bundles with vundle (warns molokai not found, and will install it)
+vim +BundleInstall +qall
+
 echo "Patch font for Powerline. You might need to install 'python-fontforge'."
 mkdir -p ~/.fonts
 cd ~/.fonts
 # powerline patch DejaVuSansMono
 ~/.vim/bundle/vim-powerline/fontpatcher/fontpatcher /usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono.ttf
 
-vim +BundleInstall +qall
-
-echo "Install Command T"
+echo "Install Command-T. You might need to install 'vim-nox' for Ruby support."
 cd ~/.vim/bundle/Command-T/ruby/command-t/
 ruby extconf.rb
 make
-echo "Done. You might need to install 'vim-nox' for Ruby support"
+echo "Done."
